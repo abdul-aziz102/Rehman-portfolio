@@ -238,3 +238,18 @@ export interface Gallery extends BasePageConfig {
     orientation: string;
   }>;
 }
+
+/**
+ * Contact page configuration.
+ * @description Configuration for the Contact page, including contact information and social links.
+ */
+export interface Contact extends BasePageConfig {
+  /** Contact information display */
+  display: boolean;
+  /** Phone number */
+  phone?: string;
+  /** Physical location */
+  location?: string;
+  /** Portfolio website URL */
+  website?: string;
+}
