@@ -1,8 +1,6 @@
 import { ImageResponse } from "next/og";
 import { baseURL, person } from "@/resources";
 
-export const runtime = "nodejs";
-
 export async function GET(request: Request) {
   let url = new URL(request.url);
   let title = url.searchParams.get("title") || "Portfolio";
